@@ -10,19 +10,19 @@
  * 4. Exporta sequelize + todos los modelos.
  */
 
-const sequelize = require('../config/database');
+const sequelize = require('../src/config/database');
 
 // ── Importar funciones de inicialización ────────────────────────────────────
-const { Usuario,          inicializar: initUsuario }          = require('./Usuario');
-const { Servicio,         inicializar: initServicio }         = require('./Servicio');
-const { Producto,         inicializar: initProducto }         = require('./Producto');
-const { HorarioDisponible, inicializar: initHorario }         = require('./HorarioDisponible');
-const { Cita,             inicializar: initCita }             = require('./Cita');
-const { Orden,            inicializar: initOrden }            = require('./Orden');
-const { DetalleOrden,     inicializar: initDetalleOrden }     = require('./DetalleOrden');
-const { Envio,            inicializar: initEnvio }            = require('./Envio');
-const { Carrito,          inicializar: initCarrito }          = require('./Carrito');
-const { Favorito,         inicializar: initFavorito }         = require('./Favorito');
+const { Usuario, inicializar: initUsuario } = require('./Usuario');
+const { Servicio, inicializar: initServicio } = require('./Servicio');
+const { Producto, inicializar: initProducto } = require('./Producto');
+const { HorarioDisponible, inicializar: initHorario } = require('./HorarioDisponible');
+const { Cita, inicializar: initCita } = require('./Cita');
+const { Orden, inicializar: initOrden } = require('./Orden');
+const { DetalleOrden, inicializar: initDetalleOrden } = require('./DetalleOrden');
+const { Envio, inicializar: initEnvio } = require('./Envio');
+const { Carrito, inicializar: initCarrito } = require('./Carrito');
+const { Favorito, inicializar: initFavorito } = require('./Favorito');
 
 // ── 1. Inicializar modelos (cada uno recibe la instancia de sequelize) ──────
 initUsuario(sequelize);

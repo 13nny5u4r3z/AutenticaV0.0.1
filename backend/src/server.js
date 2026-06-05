@@ -2,8 +2,8 @@
 
 require('dotenv').config();
 
-const app        = require('./app');
-const { sequelize } = require('./models');   // importa todos los modelos como efecto secundario
+const app = require('./app');
+const { sequelize } = require('../models');   // importa todos los modelos como efecto secundario
 
 const PUERTO = parseInt(process.env.PORT, 10) || 3000;
 
@@ -39,7 +39,7 @@ async function iniciar() {
 }
 
 // Manejar señales de apagado limpio
-process.on('SIGINT',  () => apagar('SIGINT'));
+process.on('SIGINT', () => apagar('SIGINT'));
 process.on('SIGTERM', () => apagar('SIGTERM'));
 
 async function apagar(señal) {

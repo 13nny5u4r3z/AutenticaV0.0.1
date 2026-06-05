@@ -9,10 +9,10 @@ class Usuario extends Model {
    * Se llama desde src/models/index.js
    */
   static asociar(modelos) {
-    Usuario.hasMany(modelos.Cita,        { foreignKey: 'usuarioId', as: 'citas' });
-    Usuario.hasMany(modelos.Orden,       { foreignKey: 'usuarioId', as: 'ordenes' });
-    Usuario.hasMany(modelos.Carrito,     { foreignKey: 'usuarioId', as: 'carrito' });
-    Usuario.hasMany(modelos.Favorito,    { foreignKey: 'usuarioId', as: 'favoritos' });
+    Usuario.hasMany(modelos.Cita, { foreignKey: 'usuarioId', as: 'citas' });
+    Usuario.hasMany(modelos.Orden, { foreignKey: 'usuarioId', as: 'ordenes' });
+    Usuario.hasMany(modelos.Carrito, { foreignKey: 'usuarioId', as: 'carrito' });
+    Usuario.hasMany(modelos.Favorito, { foreignKey: 'usuarioId', as: 'favoritos' });
   }
 }
 
@@ -64,6 +64,18 @@ function inicializar(sequelize) {
         allowNull: true,
         defaultValue: null,
         comment: 'Token de refresco JWT activo',
+      },
+      codigoRecuperacion: {
+        type: DataTypes.STRING(6),
+        allowNull: true,
+        defaultValue: null,
+        comment: 'Código de recuperación de contraseña de 6 dígitos',
+      },
+      codigoRecuperacionExpiracion: {
+        type: DataTypes.DATE,
+        allowNull: true,
+        defaultValue: null,
+        comment: 'Fecha y hora de expiración del código de recuperación',
       },
       intentosFallidos: {
         type: DataTypes.INTEGER,

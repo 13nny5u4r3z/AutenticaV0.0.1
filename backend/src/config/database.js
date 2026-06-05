@@ -17,8 +17,8 @@ const sequelize = new Sequelize(
     // Logging: desactivado en producción
     logging: esProd ? false : console.log,
 
-    // Zona horaria para México
-    timezone: 'America/Mexico_City',
+    // Zona horaria para México. MySQL2 espera un valor de offset válido.
+    timezone: process.env.DB_TIMEZONE || '-06:00',
 
     dialectOptions: {
       charset: 'utf8mb4',
