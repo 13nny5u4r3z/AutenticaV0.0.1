@@ -82,3 +82,15 @@
     at next (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\node_modules\express\lib\router\index.js:280:10)
     at router.handle (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\node_modules\express\lib\router\index.js:175:3)
     at router (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\node_modules\express\lib\router\index.js:47:12)
+2026-06-05T23:41:27.674Z error: Error: Refresh token inválido o expirado
+    at refreshToken (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\src\controllers\auth.controller.js:132:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-05T23:46:51.828Z error: Error: Refresh token inválido o expirado
+    at refreshToken (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\src\controllers\auth.controller.js:132:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-05T23:46:53.501Z error: Error: Refresh token inválido o expirado
+    at refreshToken (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\src\controllers\auth.controller.js:132:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-06-05T23:47:39.540Z error: Error: Código inválido o expirado
+    at verificarCodigo (C:\Users\Surface\OneDrive\Escritorio\AutenticaV0.0.1\backend\src\controllers\auth.controller.js:221:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
