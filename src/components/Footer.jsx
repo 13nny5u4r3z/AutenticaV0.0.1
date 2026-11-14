@@ -13,15 +13,15 @@ export function Footer() {
   return (
     <footer className="mt-20 bg-primary text-sand">
       <div className="container-page py-14 md:py-16">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="max-w-sm lg:col-span-2">
-            <a href="#inicio" className="flex items-center gap-3">
+            <a href="#inicio" className="flex flex-wrap items-center gap-3">
               <img
                 src={logo}
                 alt=""
                 className="h-8 w-auto object-contain"
               />
-              <span className="font-display text-base font-bold uppercase tracking-[0.18em] text-white">
+              <span className="min-w-0 break-words font-display text-base font-bold uppercase tracking-[0.18em] text-white">
                 Auténtica
               </span>
             </a>
@@ -53,7 +53,7 @@ export function Footer() {
             <h2 className="font-display text-caption uppercase tracking-[0.16em] text-white">
               Contacto
             </h2>
-            <ul className="mt-4 space-y-2.5 text-small text-sand">
+            <ul className="mt-4 space-y-2.5 break-words text-small text-sand">
               <li>
                 <a href="mailto:hola@autentica.com" className="transition-colors hover:text-white">
                   hola@autentica.com
@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-rose/30 pt-6 text-caption uppercase tracking-[0.12em] text-rose sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Auténtica. Todos los derechos reservados.</p>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5">
             <a href="#privacidad" className="transition-colors hover:text-white">
               Privacidad
             </a>

@@ -3,7 +3,7 @@ export function Contact() {
     <section id="contacto" className="container-page pb-16 md:pb-24">
       <div
         id="agendar"
-        className="rounded-panel bg-primary px-6 py-10 text-sand md:px-12 md:py-14"
+        className="rounded-panel bg-primary px-5 py-10 text-sand md:px-12 md:py-14"
       >
         <p className="font-display text-caption uppercase tracking-[0.2em] text-rose">
           Empecemos

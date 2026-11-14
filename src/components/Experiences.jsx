@@ -18,7 +18,7 @@ const services = [
 
 export function Experiences() {
   return (
-    <section id="experiencias" className="container-page pb-16 md:pb-24">
+    <section id="experiencias" className="container-page pt-16 pb-16 md:pt-24 md:pb-24">
       <div className="max-w-2xl">
         <p className="font-display text-caption uppercase tracking-[0.2em] text-black">
           Experiencias
@@ -30,22 +30,22 @@ export function Experiences() {
         </p>
       </div>
 
-      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <article
             key={service.number}
-            className="flex flex-col rounded-card border border-rose/70 bg-surface p-6 shadow-card md:p-7"
+            className="flex flex-col rounded-card border border-rose/70 bg-surface p-5 shadow-card md:p-7"
           >
             <span className="font-display text-caption tracking-[0.14em] text-black">
               {service.number}
             </span>
             <h3 className="mt-4 text-h3">{service.title}</h3>
-            <p className="mt-3 flex-1 text-small text-black/75">
+            <p className="mt-3 flex-1 max-w-prose text-small text-black/75">
               {service.text}
             </p>
             <a
               href="#agendar"
-              className="mt-6 inline-flex items-center gap-2 font-display text-[0.7rem] uppercase tracking-[0.14em] text-black transition-colors hover:text-secondary"
+              className="mt-6 inline-flex items-center gap-2 font-display text-[0.75rem] uppercase tracking-[0.14em] text-black transition-colors hover:text-secondary"
             >
               Reservar
               <span aria-hidden="true">→</span>
